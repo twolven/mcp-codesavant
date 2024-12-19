@@ -1,0 +1,5 @@
+mcp-server>=0.1.0
+asyncio
+logging
+difflib
+python-dateutil
