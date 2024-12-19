@@ -2,8 +2,6 @@
 
 CodeSavant is a Model Context Protocol (MCP) server that provides code manipulation, execution, and version control capabilities. It allows AI assistants to read, write, and execute code while maintaining a history of changes.
 
-Author: Todd Wolven ([@twolven](https://github.com/twolven))
-
 ## Features
 
 - Read and write code files with line-specific operations
@@ -273,6 +271,11 @@ Each language execution creates a temporary file in the workspace directory and 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## Author
 
-- GitHub: [@twolven](https://github.com/twolven)
+Todd Wolven - (https://github.com/twolven)
+
+## Acknowledgments
+
+- Built with the Model Context Protocol (MCP) by Anthropic
+- Developed for use with Anthropic's Claude
