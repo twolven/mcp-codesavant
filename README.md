@@ -1,5 +1,7 @@
 # MCP-CodeSavant
 
+CodeSavant is a WIP project.
+
 CodeSavant is a Model Context Protocol (MCP) server that provides code manipulation, execution, and version control capabilities. It allows AI assistants to read, write, and execute code while maintaining a history of changes.
 
 ## Features
