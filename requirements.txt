@@ -1,5 +1,4 @@
 mcp
 asyncio
 logging
-difflib
 python-dateutil
