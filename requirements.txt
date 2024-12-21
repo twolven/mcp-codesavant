@@ -1,4 +1,4 @@
-mcp-server>=0.1.0
+mcp
 asyncio
 logging
 difflib
