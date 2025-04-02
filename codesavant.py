@@ -448,10 +448,18 @@ class CodeRunner:
                                 
                 runtime = datetime.now().timestamp() - start_time
                 
+                try:
+                    output = stdout.decode('utf-8') if stdout else ''
+                except UnicodeDecodeError:
+                    try:
+                        output = stdout.decode('cp1252') if stdout else ''
+                    except UnicodeDecodeError:
+                        output = stdout.decode('utf-8', errors='replace') if stdout else ''
+                        
                 result = CodeExecutionResult(
                     state=state,
-                    output=stdout.decode() if stdout else '',
-                    error=stderr.decode() if stderr else None,
+                    output=output,
+                    error=stderr.decode('utf-8', errors='replace') if stderr else None,
                     runtime=runtime,
                     exit_code=process.returncode if state != CodeExecutionState.TIMEOUT else -1
                 )
